@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body, .field {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input:focus-visible {
+  outline: 1px solid black;
+  outline-offset: 2px;
+}
+
+input[type="url"] {
+  border: 2px solid hotpink;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+::file-selector-button {
+  border: 2px solid hotpink;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+canvas {
+  margin: 0 auto;
+  outline: 2px solid hotpink;
+  outline-offset: 2px;
+}

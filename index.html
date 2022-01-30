@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Vrai et très grave</h1>
+
+    <p>
+      Alors ma belle, je sais qu'être une star c'est crevant donc je t'ai fait
+      ça simple
+    </p>
+
+    <div class="field">
+      <label for="input-url">Tu colles l'url de l'image</label>
+      <input id="input-url" type="url" />
+    </div>
+
+    <div class="field">
+      <label for="input-file">Ou tu choisis depuis ton tel / ordi</label>
+      <input id="input-file" type="file" accept="image/*" />
+    </div>
+
+    <img id="mark" src="./chien.png" alt="" hidden />
+
+    <p>Et bam ! T'as plus qu'à copier l'image qui sort là et c'est tout, t'es brandée</p>
+    <canvas
+      id="output"
+      width="200"
+      height="200"
+      style="border-radius: 50%;"
+    ></canvas>
+  </body>
+</html>
