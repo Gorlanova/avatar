@@ -4,7 +4,8 @@
   font-family: sans-serif;
 }
 
-body, .field {
+body,
+.field {
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +37,8 @@ input[type="url"] {
   background-color: white;
   border-radius: 0.25rem;
   padding: 0.5rem;
+  font: inherit;
+  color: inherit;
 }
 
 canvas {
