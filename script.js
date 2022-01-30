@@ -3,9 +3,10 @@ const fileInput = document.getElementById("input-file");
 const output = document.getElementById("output").getContext("2d");
 
 const mark = document.getElementById("mark");
-const buffer = document.getElementById("buffer");
 
 async function updateOutput(e) {
+  const buffer = new Image();
+
   buffer.onload = () => {
     const bufferRatio = buffer.naturalWidth / buffer.naturalHeight;
 
@@ -28,17 +29,7 @@ async function updateOutput(e) {
     const startX = surplusX / 2;
     const startY = surplusY / 2;
 
-    output.drawImage(
-      buffer,
-      startX,
-      startY,
-      reference,
-      reference,
-      0,
-      0,
-      200,
-      200
-    );
+    output.drawImage(buffer, startX, startY, reference, reference, 0, 0, 200, 200);
     output.drawImage(mark, 120, 120, 60, 60);
   };
 
