@@ -54,6 +54,6 @@ input[type="url"] {
 
 canvas {
   margin: 0 auto;
-  outline: 2px solid hotpink;
-  outline-offset: 2px;
+  border: 2px solid hotpink;
+  padding: 2px;
 }
